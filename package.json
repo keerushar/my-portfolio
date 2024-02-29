@@ -1,7 +1,8 @@
 {
-  "name": "kiran-portfolio",
+  "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://keerushar.github.io/my-portfolio",
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
@@ -10,6 +11,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "gh-pages": "^6.1.1",
     "gsap-trial": "^3.12.5",
     "loaders.css": "^0.1.2",
     "react": "^18.2.0",
@@ -25,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
